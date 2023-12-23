@@ -1,2 +1,4 @@
+postgres:
+  port: "5443"
 project:
   name: daily-data-automated
