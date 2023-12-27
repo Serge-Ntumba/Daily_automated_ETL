@@ -2,6 +2,7 @@ import psycopg2
 from psycopg2 import sql, IntegrityError
 import csv
 
+#Database credentials
 dbname = 'db_products'
 user = 'postgres'
 password = 'postgres'

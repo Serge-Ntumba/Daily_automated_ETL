@@ -1,3 +1,10 @@
+
+# DAILY DATA INGESTION FROM CSV TO POSTGRES AND FROM POSTGRES TO S3
+![architecture](architecture.png)
+
+# THE AIRFLOW DAG
+![architecture](architecture.png)
+
 Overview
 ========
 
@@ -47,3 +54,4 @@ Contact
 =======
 
 The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
+
