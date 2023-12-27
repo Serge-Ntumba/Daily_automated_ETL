@@ -2,8 +2,14 @@
 # DAILY DATA INGESTION FROM CSV TO POSTGRES AND FROM POSTGRES TO S3
 ![architecture](architecture.png)
 
-# THE AIRFLOW DAG
-![architecture](architecture.png)
+
+This project focuses on the seamless integration of data from a CSV file into a PostgreSQL database using Python. Additionally, Airflow is employed to perform a daily extraction of this data, transferring it to an S3 Bucket for further analysis and storage.
+
+The Python script included in this project facilitates the ingestion of data from a CSV file into a PostgreSQL database.
+We leverage Apache Airflow to automate the extraction process on a daily basis. The workflow is designed to efficiently move the data from the PostgreSQL database to an S3 Bucket. Here is the airflow screen:
+
+### THE AIRFLOW DAG
+![architecture](screen-airflow.png)
 
 Overview
 ========
