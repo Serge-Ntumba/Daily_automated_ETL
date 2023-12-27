@@ -3,11 +3,11 @@ from psycopg2 import sql, IntegrityError
 import csv
 
 #Database credentials
-dbname = 'db_products'
-user = 'postgres'
-password = 'postgres'
-host = 'localhost'
-port = '5432'
+dbname = 'name_your_database'
+user = 'name_your_username'
+password = 'name_your_ps'
+host = 'name_your_localhost'
+port = 'name_your_database_port'
 
 csv_file_path = './data/Orders.csv'
 table_name = 'orders'

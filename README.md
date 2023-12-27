@@ -1,7 +1,6 @@
-
 # DAILY DATA INGESTION FROM CSV TO POSTGRES AND FROM POSTGRES TO S3
-![architecture](architecture.png)
 
+![architecture](architecture.png)
 
 This project focuses on the seamless integration of data from a CSV file into a PostgreSQL database using Python. Additionally, Airflow is employed to perform a daily extraction of this data, transferring it to an S3 Bucket for further analysis and storage.
 
@@ -9,21 +8,20 @@ The Python script included in this project facilitates the ingestion of data fro
 We leverage Apache Airflow to automate the extraction process on a daily basis. The workflow is designed to efficiently move the data from the PostgreSQL database to an S3 Bucket. Here is the airflow screen:
 
 ### THE AIRFLOW DAG
+
 ![architecture](screen-airflow.png)
 
-Overview
-========
+# Overview
 
 Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
 
-Project Contents
-================
+# Project Contents
 
 Your Astro project contains the following files and folders:
 
 - dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes two example DAGs:
-    - `example_dag_basic`: This DAG shows a simple ETL data pipeline example with three TaskFlow API tasks that run daily.
-    - `example_dag_advanced`: This advanced DAG showcases a variety of Airflow features like branching, Jinja templates, task groups and several Airflow operators.
+  - `example_dag_basic`: This DAG shows a simple ETL data pipeline example with three TaskFlow API tasks that run daily.
+  - `example_dag_advanced`: This advanced DAG showcases a variety of Airflow features like branching, Jinja templates, task groups and several Airflow operators.
 - Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
 - include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
 - packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
@@ -31,8 +29,7 @@ Your Astro project contains the following files and folders:
 - plugins: Add custom or community plugins for your project to this file. It is empty by default.
 - airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
 
-Deploy Your Project Locally
-===========================
+# Deploy Your Project Locally
 
 1. Start Airflow on your local machine by running 'astro dev start'.
 
@@ -51,13 +48,10 @@ Note: Running 'astro dev start' will start your project with the Airflow Webserv
 
 You should also be able to access your Postgres Database at 'localhost:5432/postgres'.
 
-Deploy Your Project to Astronomer
-=================================
+# Deploy Your Project to Astronomer
 
 If you have an Astronomer account, pushing code to a Deployment on Astronomer is simple. For deploying instructions, refer to Astronomer documentation: https://docs.astronomer.io/cloud/deploy-code/
 
-Contact
-=======
+# Contact
 
 The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
-
